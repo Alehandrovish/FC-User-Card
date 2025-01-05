@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css" type="text/css" />
   </head>
   <body>
-    <article>
+    <article class="user_card">
       <section class="location">
         <img src="./assets/images/compass.png" alt="Live in" />
         <p>Victoria Peak, British Hong Kong</p>
@@ -17,29 +17,47 @@
         alt="Jackie_Chan"
         class="user_Photo"
       />
-      <h2 class="name">Jackie_Chan</h2>
+      <h2 class="name">Jackie Chan</h2>
       <p class="about">
         film and voice actor, stuntman, film director, film producer,
         screenwriter, stunt and fight coordinator, singer, philanthropist,
         martial artist.
       </p>
-      <button type="button">Follow</button>
+      <button class="follow" type="button">Follow</button>
       <section class="statistic">
-        <div class="statistic_cell">
-          <img src="./assets/images/picture.png" alt="posts" />
-          <p>Posts</p>
-          <p>635</p>
-        </div>
-        <div class="statistic_cell">
-          <img src="./assets/images/heart.png" alt="favorite" />
-          <p>Favorite</p>
-          <p>3,472</p>
-        </div>
-        <div class="statistic_cell">
-          <img src="./assets/images/paper-plane.png" alt="message" />
-          <p>Messages</p>
-          <p>1,293</p>
-        </div>
+        <section class="statistic_cell">
+          <img
+            class="statistic_img"
+            src="./assets/images/picture.png"
+            alt="posts"
+          />
+          <div class="section_text">
+            <p>Posts</p>
+            <p>635</p>
+          </div>
+        </section>
+        <section class="statistic_cell">
+          <img
+            class="statistic_img"
+            src="./assets/images/heart.png"
+            alt="favorite"
+          />
+          <div class="section_text">
+            <p>Favorite</p>
+            <p>3,472</p>
+          </div>
+        </section>
+        <section class="statistic_cell">
+          <img
+            class="statistic_img"
+            src="./assets/images/paper-plane.png"
+            alt="message"
+          />
+          <div class="section_text">
+            <p>Messages</p>
+            <p>1,293</p>
+          </div>
+        </section>
       </section>
     </article>
   </body>
