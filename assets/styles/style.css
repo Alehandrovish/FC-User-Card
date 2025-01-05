@@ -63,6 +63,9 @@ body {
   left: 0;
   cursor: pointer;
 }
+.unfollow {
+  background-color: #fc4e56;
+}
 .follow:active {
   box-shadow: none;
   top: 3px;
