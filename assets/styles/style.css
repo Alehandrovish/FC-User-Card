@@ -4,10 +4,7 @@
   box-sizing: border-box;
   border: none;
 }
-body {
-  background-color: #17c4a8;
-  font-family: sans-serif;
-}
+body,
 .user_card,
 .location,
 .statistic,
@@ -16,10 +13,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+body {
+  background-color: #17c4a8;
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+}
 .user_card {
   background-color: white;
   max-width: 500px;
-  margin: 5% auto;
   gap: 15px;
   flex-direction: column;
   border-radius: 20px;
