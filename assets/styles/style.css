@@ -44,7 +44,6 @@ body {
   width: var(--ava_size);
   height: var(--ava_size);
   border-radius: 50%;
-  object-fit: cover;
   padding: 10px;
   box-shadow: 0 1px #dcdcdb;
   background-color: #fafcfd;
