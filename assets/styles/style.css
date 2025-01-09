@@ -4,7 +4,11 @@
   box-sizing: border-box;
   border: none;
 }
-body,
+html {
+  --ava_size: 250px;
+  --social-size: 30px;
+}
+.card_wrapper,
 .user_card,
 .location,
 .statistic,
@@ -16,12 +20,13 @@ body,
 body {
   background-color: #17c4a8;
   font-family: sans-serif;
-  display: flex;
+}
+.card_wrapper {
   height: 100vh;
 }
 .user_card {
   background-color: white;
-  max-width: 500px;
+  max-width: 450px;
   gap: 15px;
   flex-direction: column;
   border-radius: 20px;
@@ -36,12 +41,13 @@ body {
   height: 1rem;
 }
 .user_Photo {
-  width: 200px;
-  height: 200px;
+  width: var(--ava_size);
+  height: var(--ava_size);
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid black;
   padding: 10px;
+  box-shadow: 0 1px #dcdcdb;
+  background-color: #fafcfd;
 }
 .name {
   font-weight: lighter;
@@ -52,8 +58,8 @@ body {
   padding: 0 50px;
 }
 .follow {
-  width: 150px;
-  height: 50px;
+  min-width: 150px;
+  min-height: 50px;
   background-color: #66b4ff;
   color: white;
   border-radius: 10px;
@@ -64,6 +70,7 @@ body {
   top: 0;
   left: 0;
   cursor: pointer;
+  text-align: center;
 }
 .unfollow {
   background-color: #fc4e56;
@@ -86,9 +93,12 @@ body {
   border-right: 3px solid #284157;
 }
 .statistic_img {
-  width: 50px;
-  height: 50px;
+  width: var(--social-size);
+  height: var(--social-size);
 }
 .statistic_cell p:first-of-type {
   color: #98676f;
+}
+.statistic_cell p:last-of-type {
+  text-align: center;
 }
